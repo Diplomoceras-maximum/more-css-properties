@@ -95,7 +95,6 @@
     Controls how far the background extends, border-box fills the entire box, padding-box excludes the border, content-box fils only content area
 
 */
-
 /* Shorthand in one line:
 
     image, repeat, position, size (/), attachment, colour
@@ -104,4 +103,90 @@
 
 .box {
   background: url(bg.jpg) no-repeat center / cover fixed lightblue;
+}
+
+/* Border
+
+    1. border property is a shorthand for setting width, style, and colour
+    2. border can be applied to all sides at once, or to individual sides (top, right, bottom, left)
+
+    Shorthand for:
+    1. border-width: how thick the border is (border-width: 2px;)
+    2. border-style: the style of the border line (border-style: solid;)
+    3. border-color: the colour of the border (border-color: black;)
+
+
+    === border-top, border-right, border-bottom, border-left ===
+
+    .sides {
+        border-top: 2px solid red;
+        border-right: 2px dashed green;
+        border-bottom: 2px dotted blue;
+        border-left: 2px double orange;
+    }
+
+    Allows you to control each side separately
+
+
+    === border-width ===
+
+    .wide {
+        border-style: solid;
+        border-width: 5px;
+    }
+
+    Sets the thickness of the border, needs a border-style to appear
+
+
+    === border-style ===
+
+    .styles {
+        border-width: 2px;
+        border-style: dashed;
+    }
+
+    Sets the type of line used, styles include: solid, dashed, dotted, double, groove, ridge, inset, outset
+
+
+    === border-color ===
+
+    .colored {
+        border: 2px solid;
+        border-color: purple;
+    }
+
+    Sets the colour of the border
+
+
+    === border-radius ===
+
+    .rounded {
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    Rounds the corners of the element
+
+
+    === border-radius (circle) ===
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: teal;
+    }
+
+    makes a perfect circle when width and height are equal and border radius is 50%
+
+*/
+/* Shorthand example in one line:
+
+    width, style, colour
+
+*/
+
+.card {
+  border: 1px solid #cccccc;
+  border-radius: 8px;
 }
