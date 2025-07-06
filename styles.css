@@ -1,3 +1,7 @@
+* {
+  padding: 10px;
+  margin: 10px;
+}
 /* === Useful CSS Properties === */
 
 /* Background
@@ -189,4 +193,55 @@
 .card {
   border: 1px solid #cccccc;
   border-radius: 8px;
+}
+
+/* Box Shadow
+
+    1. box-shadow property adds a shadow around an element
+    2. Useful for creating depth and seperating elements visually
+    3. Can be subtle (for cards) or dramatic (for modals)
+
+    Syntax: offset-x, offset-y, blur-radius, spread-radius (optional), colour
+
+
+    === box-shadow (basic) ===
+
+    .card {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    - 0: horizontal offset (moves left/right)
+    - 2px: vertical offset (moves up/down)
+    - 5px: blur radius (how soft the shadow is)
+    - rgba(0, 0, 0, 0.1): shadow colour (light transparent black)
+
+
+    === box-shadow (stronger) ===
+
+    .modal {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    More depth for higher elevation effects (modals, overlays)
+
+
+    === inset shadow ===
+
+    .inset-box {
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    "inset" puts the shadow inside the element
+*/
+
+.floating-card {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.modal {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.inset-box {
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
