@@ -245,3 +245,61 @@
 .inset-box {
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+/* Overflow
+
+    1. overflow defines what happens when content is too big for its container
+    2. Useful for scrollable areas or to hide overflowing content
+
+    Options:
+    - visible (default): content spills out
+    - hidden: cuts off extra content
+    - scroll: always shows scrollbars
+    - auto: adds scrollbars only when needed
+
+
+    === overflow: auto ===
+
+    .scroll-box {
+        width: 300px;
+        height: 150px;
+        overflow: auto;
+    }
+
+    Adds scrollbars only if content is too big
+
+
+    === overflow: hidden ===
+
+    .crop-box {
+        overflow: hidden;
+    }
+
+    Cuts off content that doesn’t fit
+
+    
+    === overflow-x and overflow-y ===
+
+    .horizontal-scroll {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    Controls scrolling separately on horizontal and vertical axes
+*/
+
+.scroll-box {
+  width: 300px;
+  height: 150px;
+  overflow: auto;
+}
+
+.crop-box {
+  height: 30px;
+  overflow: hidden;
+}
+
+.horizontal-scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
