@@ -303,3 +303,49 @@
   overflow-x: scroll;
   overflow-y: hidden;
 }
+
+/* Opacity
+
+    1. The opacity property sets how transparent an element is
+    2. Values range from 1 (fully visible) to 0 (fully invisible)
+
+
+    === opacity: 0.5 ===
+
+    .faded {
+        opacity: 0.5;
+    }
+
+    Makes element 50% transparent
+
+
+    === opacity: 0 ===
+
+    .invisible {
+        opacity: 0;
+    }
+
+    Makes the element fully invisible but still takes up space
+
+    
+    === opacity with hover ===
+
+    .button:hover {
+        opacity: 0.8;
+    }
+
+    Often used for hover effects on buttons, images, and links
+*/
+
+.faded {
+  background-color: blue;
+  opacity: 0.5;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
