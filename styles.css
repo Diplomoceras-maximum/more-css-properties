@@ -1,0 +1,107 @@
+/* === Useful CSS Properties === */
+
+/* Background
+
+    1. background property is shorthand for 8 other properties
+    2. background property lets you add colour, images, and control how images behave
+
+    Shorthand for:
+    1. background-attachment: whether the background scrolls with the page or stays (background-attachment: fixed;)
+    2. background-clip: what area the background colour/image is visible in (background-clip: border-box;)
+    3. background-color: the background colour of an element (background-color: lightblue;)
+    4. background-image: a background image such as a url or gradient (background-image: url("bg.png");)
+    5. background-origin: what area the background image is placed relative to (background-origin: padding-box;)
+    6. background-position: where the background image is positioned (background-position: center;)
+    7. background-repeat: whether the background image repeats (background-repeat: no-repeat;)
+    8. background-size: how large the background image is (background-size: cover;)
+
+
+    === background-color ===
+
+    .box {
+        background-color: #ffffff;
+    }
+
+    Sets a colour behind the content
+
+
+    === background-image ===
+
+    .hero {
+        background-image: url("mountains.jpg");
+    }
+
+    Sets an image behind the content
+
+
+    === background-repeat ===
+
+    .tile {
+        background-image: url("pattern.png");
+        background-repeat: repeat; 
+    }
+
+    Controls background repetition, no-repeat for logos and banners, repeat for textures and patterns
+
+
+    === background-position ===
+
+    .banner {
+        background-image: url("header.jpg");
+        background-position: center top;
+    }
+
+    Sets where image is placed, values include: center, top, left, right, bottom, etc
+
+
+    === background-size ===
+
+    .cover {
+        background-image: url("photo.jpg");
+        background-size: cover;
+    }
+
+    Defined how big the image is, cover fills entire element and crops as needed, contain makes sure the hole image fits even if there is extra space left
+
+
+    === background-attachment ===
+
+    .fixed-background {
+        background-image: url("sky.jpg");
+        background-attachment: fixed;
+    }
+
+    Controls scroll behaviour, scroll is for scrolling with the page, fixed stays in place while content scrolls
+
+
+    === background-origin ===
+
+    .origin-example {
+        background-image: url("shape.png");
+        background-origin: content-box;
+    }
+
+    Defines where the background starts inside of, border-box starts at edge, padding-box starts inside padding, content-box starts inside actual content
+
+
+    === background-clip ===
+
+    .clip-example {
+        background-color: lightblue;
+        border: 5px solid black;
+        background-clip: content-box;
+    }
+
+    Controls how far the background extends, border-box fills the entire box, padding-box excludes the border, content-box fils only content area
+
+*/
+
+/* Shorthand in one line:
+
+    image, repeat, position, size (/), attachment, colour
+
+*/
+
+.box {
+  background: url(bg.jpg) no-repeat center / cover fixed lightblue;
+}
